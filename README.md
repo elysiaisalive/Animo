@@ -7,7 +7,7 @@
 - [Disclaimer](#disclaimer)
 - [Documentation](#documentation)
 - [Installation](#installation)
-- [Feature Overview](#feature-overview)
+- [Features](#features)
 - [Contributing](#contributing)
 
 # Disclaimer
@@ -24,7 +24,7 @@ Here's how to install:
 2. Open GameMaker
 3. Goto Tools -> Import Local Package
 
-## Feature Overview
+## Features
 - Modular and lightweight animation structs
 - Easily add and modify animations in-code
 - Bulk add animations to a global map to work with based on your sprite asset tags and naming prefixes
