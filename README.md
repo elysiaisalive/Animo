@@ -13,7 +13,7 @@
 # Disclaimer
 <i>Animo is intended for use with GameMaker Versions 2.3+ Don't come crying if it doesn't work on previous versions!</i>
 
-Nearly everything in this repository is work-in-progress and undocumented, so not every Module will be available yet. Feel free to contribute to make that faster!
+Nearly everything in this repository is work-in-progress and undocumented, Feel free to contribute to make that faster!
 
 # Documentation
 [Documentation is work-in-progress, so please feel free to contribute](https://github.com/Dappermang/8XLib/wiki)</link>.
