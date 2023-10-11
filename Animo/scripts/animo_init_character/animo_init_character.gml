@@ -49,7 +49,20 @@ function animo_init_character( tag_key, _name_regex = __animoRegex ) {
 		_animo_sprite = _tagged_asset_ids[i];
         
         // We initialize the animations speed with the default speed set in the actual asset
-        global.__animoAnimationMap[$ _lowercase_tag_key].animations[$ _animo_key] = animo_init_looped( _animo_sprite, sprite_get_speed( asset_get_index( _asset_name ) ) );
+        var _default_anim_speed = 0;
+        
+        // Convert the speed depending on the speed type. ( ugh )
+        switch( sprite_get_speed_type( asset_get_index( _asset_name ) ) ) {
+        	case spritespeed_framespersecond:
+        		_default_anim_speed = sprite_get_speed( asset_get_index( _asset_name ) ) / game_get_speed( gamespeed_fps );
+        		break;
+        	case spritespeed_framespergameframe:
+        		_default_anim_speed = sprite_get_speed( asset_get_index( _asset_name ) );
+        		break;
+        }
+        
+        show_debug_message( _default_anim_speed );
+        global.__animoAnimationMap[$ _lowercase_tag_key].animations[$ _animo_key] = animo_init_looped( _animo_sprite, _default_anim_speed );
     }
 
     var _ms = ( get_timer() / 1000 );
