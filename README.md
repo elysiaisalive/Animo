@@ -1,5 +1,5 @@
 
-<div align=center>  <h1> Animo v0.0.1 </h1>  </div>
+<div align=center>  <h1> Animo v0.0.2 </h1>  </div>
 
 # Table of Contents
 
