@@ -16,7 +16,7 @@
 Nearly everything in this repository is work-in-progress and undocumented, Feel free to contribute to make that faster!
 
 # Documentation
-[Read the wiki](https://github.com/Dappermang/8XLib/wiki)</link>.
+[Read the wiki](https://github.com/Dappermang/8XWiki/wiki/Animo)</link>.
 
 # Installation
 Here's how to install:
