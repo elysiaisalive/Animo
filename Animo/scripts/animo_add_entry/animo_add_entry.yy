@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "animo_init_character",
+  "name": "animo_add_entry",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

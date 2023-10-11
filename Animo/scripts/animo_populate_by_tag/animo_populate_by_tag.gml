@@ -1,14 +1,14 @@
 /// @desc This function will initialize an entry in the global animo map and then auto-populate it with animations based on what sprites are tagged with the tag key.
 /// @param {string} tag_key         The name of the asset tag as a string.
 /// @param {number} ?name_regex    Naming pattern to use
-function animo_populate_by_tag( tag_key, _name_regex = __animoRegex ) {
+function animo_init_character( tag_key, _name_regex = __animoRegex ) {
     var _lowercase_tag_key = string_lower( tag_key );
     var _tagged_asset_array = tag_get_assets( _lowercase_tag_key );
     var _tagged_asset_ids = tag_get_asset_ids( _lowercase_tag_key, asset_sprite );
 	
 	// If there is not entry in the map, create one.
 	if ( !animo_character_exists( _lowercase_tag_key ) ) {
-		animo_init_character( _lowercase_tag_key );
+		animo_add_entry( _lowercase_tag_key );
 	}
 	
     if ( is_undefined( tag_key ) 
@@ -50,7 +50,6 @@ function animo_populate_by_tag( tag_key, _name_regex = __animoRegex ) {
         
         // We initialize with 0 anim speed for now, we can set these properties later manually.
         global.__animoAnimationMap[$ _lowercase_tag_key].animations[$ _animo_key] = animo_init_looped( _animo_sprite, 0 );
-        
     }
 
     var _ms = ( get_timer() / 1000 );
