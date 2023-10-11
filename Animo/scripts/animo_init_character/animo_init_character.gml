@@ -60,8 +60,7 @@ function animo_init_character( tag_key, _name_regex = __animoRegex ) {
         		_default_anim_speed = sprite_get_speed( asset_get_index( _asset_name ) );
         		break;
         }
-        
-        show_debug_message( _default_anim_speed );
+		
         global.__animoAnimationMap[$ _lowercase_tag_key].animations[$ _animo_key] = animo_init_looped( _animo_sprite, _default_anim_speed );
     }
 
