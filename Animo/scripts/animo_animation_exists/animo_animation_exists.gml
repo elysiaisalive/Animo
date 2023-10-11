@@ -4,9 +4,9 @@
 function animo_animation_exists( tag_key, animation_key ) {
     var _lowercase_tag_key = string_lower( tag_key );
     
-    if ( !is_undefined( global.__animoAnimationMap[$ _lowercase_tag_key] ) ) {
-        if ( struct_exists( global.__animoAnimationMap[$ _lowercase_tag_key], "animations" ) ) {
-            var _animation_data = global.__animoAnimationMap[$ _lowercase_tag_key].animations;
+    if ( !is_undefined( __animoAnimationMap[$ _lowercase_tag_key] ) ) {
+        if ( struct_exists( __animoAnimationMap[$ _lowercase_tag_key], "animations" ) ) {
+            var _animation_data = __animoAnimationMap[$ _lowercase_tag_key].animations;
             
             if ( !is_undefined( _animation_data[$ animation_key] ) ) {
                 return true;

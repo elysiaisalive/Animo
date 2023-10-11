@@ -4,8 +4,8 @@
 function animo_add_entry( tag_key ) {
     var _lowercase_tag_key = string_lower( tag_key );
     
-    if ( is_undefined( global.__animoAnimationMap[$ _lowercase_tag_key] ) ) {
-        global.__animoAnimationMap[$ _lowercase_tag_key] = new cAnimoMapEntry();
+    if ( is_undefined( __animoAnimationMap[$ _lowercase_tag_key] ) ) {
+        __animoAnimationMap[$ _lowercase_tag_key] = new cAnimoMapEntry();
         return true;
     }
     else {

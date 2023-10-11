@@ -5,7 +5,7 @@ function animo_remove_entry( tag_key ) {
     var _lowercase_tag_key = string_lower( tag_key );
     
     if ( animo_character_exists( _lowercase_tag_key ) ) {
-        struct_remove( global.__animoAnimationMap, _lowercase_tag_key );
+        struct_remove( __animoAnimationMap, _lowercase_tag_key );
     }
     else {
         // If entry already exists, return

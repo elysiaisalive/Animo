@@ -3,7 +3,7 @@
 function animo_character_exists( tag_key ) {
     var _lowercase_tag_key = string_lower( tag_key );
     
-    if ( !is_undefined( global.__animoAnimationMap[$ _lowercase_tag_key] ) ) {
+    if ( !is_undefined( __animoAnimationMap[$ _lowercase_tag_key] ) ) {
         return true;
     }
     else {

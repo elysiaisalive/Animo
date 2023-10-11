@@ -61,7 +61,7 @@ function animo_init_character( tag_key, _name_regex = __animoRegex ) {
         		break;
         }
 		
-        global.__animoAnimationMap[$ _lowercase_tag_key].animations[$ _animo_key] = animo_init_looped( _animo_sprite, _default_anim_speed );
+        __animoAnimationMap[$ _lowercase_tag_key].animations[$ _animo_key] = animo_init_looped( _animo_sprite, _default_anim_speed );
     }
 
     var _ms = ( get_timer() / 1000 );
