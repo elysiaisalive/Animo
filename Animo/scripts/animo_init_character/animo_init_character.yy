@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "animo_enable_trim_prefix",
+  "name": "animo_init_character",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

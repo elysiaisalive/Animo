@@ -7,8 +7,8 @@ function animo_populate_by_tag( tag_key, _name_regex = __animoRegex ) {
     var _tagged_asset_ids = tag_get_asset_ids( _lowercase_tag_key, asset_sprite );
 	
 	// If there is not entry in the map, create one.
-	if ( !animo_tag_exists( _lowercase_tag_key ) ) {
-		animo_init_tag( _lowercase_tag_key );
+	if ( !animo_character_exists( _lowercase_tag_key ) ) {
+		animo_init_character( _lowercase_tag_key );
 	}
 	
     if ( is_undefined( tag_key ) 
@@ -28,7 +28,7 @@ function animo_populate_by_tag( tag_key, _name_regex = __animoRegex ) {
         var _animo_sprite = -1;
         
         // Iterating over the prefix pattern
-        if ( __animoTrimPrefixesEnabled ) {
+        if ( global.animo_trim_prefixes ) {
 	        for ( var j = 0; j < array_length( __animoRegex ); ++j ) {
 	            var _regex_pattern = __animoRegex[j];
 	            var _regex_length = string_length( __animoRegex[j] );

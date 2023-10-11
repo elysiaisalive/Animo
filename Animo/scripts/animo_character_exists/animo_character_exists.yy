@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "animo_tag_exists",
+  "name": "animo_character_exists",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

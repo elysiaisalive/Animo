@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "animo_init_tag",
+  "name": "animo_prefix_trim_enable",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

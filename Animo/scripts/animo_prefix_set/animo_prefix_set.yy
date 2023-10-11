@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "animo_set_prefix",
+  "name": "animo_prefix_set",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -1,8 +1,8 @@
 #macro __animoFallbackSprite __spr_animo_fallback
 #macro __animoVersion "1.0.1"
 #macro __animoWelcomeString $"------------------------------------\nWelcome To Animo v{__animoVersion}\n------------------------------------"
-globalvar __animoTrimPrefixesEnabled; 
-__animoTrimPrefixesEnabled = true;
+
+global.animo_trim_prefixes = true; 
 
 globalvar __animoRegex; 
 __animoRegex = ["spr_", "spr"];
