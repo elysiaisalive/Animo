@@ -27,7 +27,7 @@ function animo_tick_animation( scope, animo_struct_ref, variable_name ) {
             if ( !is_undefined( scope[$ animo_struct_ref].frames[index][1] ) ) {
                 // Only execute callback if it has not already been called.
                 if ( !scope[$ animo_struct_ref].frames[index][2] ) {
-                    scope[$ animo_struct_ref].frames[index][1]();
+                    method_call( scope[$ animo_struct_ref].frames[index][1], [] );
                     scope[$ animo_struct_ref].frames[index][2] = true;
                 }
             }
@@ -60,7 +60,7 @@ function animo_tick_animation( scope, animo_struct_ref, variable_name ) {
             
             // If there is no end index available, we will just execute the function now
             if ( !is_undefined( scope[$ animo_struct_ref].animEndCallback ) ) {
-                scope[$ animo_struct_ref].animEndCallback();
+                method_call( scope[$ animo_struct_ref].animEndCallback, [] );
             }
             
             index = 0;

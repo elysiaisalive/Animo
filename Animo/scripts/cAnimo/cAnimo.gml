@@ -17,7 +17,7 @@ function cAnimo() constructor {
 	/// @static
 	static GetSprite = function() {
 		return self.sprite;
-	}	
+	}
 	/// @static
 	static GetAnimSpeed = function() {
 		return self.animSpeed;
@@ -38,6 +38,10 @@ function cAnimo() constructor {
 		else {
 			show_debug_message( $"Could not find callback on frame {_frame}." );
 		}
+	}
+	/// @static
+	static GetFrameCount = function() {
+		return array_length( self.frames );
 	}
 	#endregion
 	#region Setters
